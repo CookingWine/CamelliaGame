@@ -30,6 +30,12 @@ namespace WorldFramework
         TResult SendCommand<TResult>(ICommand<TResult> command);
 
         /// <summary>
+        /// 发送查询（有返回值）
+        /// </summary>
+        /// <returns></returns>
+        TResult SendQuery<TResult>(IQuery<TResult> query);
+
+        /// <summary>
         /// 获取模块组件
         /// </summary>
         /// <typeparam name="T">类型</typeparam>

@@ -95,6 +95,11 @@ namespace WorldFramework
             return ExecuteCommand(command);
         }
 
+        public TResult SendQuery<TResult>(IQuery<TResult> query)
+        {
+            return DoQuery(query);
+        }
+
         public TModel GetModel<TModel>( ) where TModel : class, IModel
         {
             return mContainer.Get<TModel>( );
@@ -152,6 +157,18 @@ namespace WorldFramework
         {
             command.SetArchitecture(this);
             return command.Execute( );
+        }
+
+        /// <summary>
+        /// 执行查询的具体实现
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        protected virtual TResult DoQuery<TResult>(IQuery<TResult> query)
+        {
+            query.SetArchitecture(this);
+            return query.Do( );
         }
 
         #endregion

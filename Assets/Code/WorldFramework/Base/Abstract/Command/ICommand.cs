@@ -4,7 +4,7 @@ namespace WorldFramework
     /// 无返回值命令接口
     /// </summary>
     /// <remarks>定义命令的能力</remarks>
-    public interface ICommand:IBelongToArchitecture, ICanSetArchitecture, ICanGetModel, ICanSendCommand
+    public interface ICommand:IBelongToArchitecture, ICanSetArchitecture, ICanGetModel, ICanSendCommand, ICanSendQuery
     {
         /// <summary>
         /// 执行命令
@@ -16,7 +16,7 @@ namespace WorldFramework
     /// 有返回值命令接口
     /// </summary>
     /// <remarks>继承<seealso cref="ICommand"/>的能力，增加返回值</remarks>
-    public interface ICommand<TResult>:IBelongToArchitecture, ICanSetArchitecture, ICanGetModel, ICanSendCommand
+    public interface ICommand<TResult>:IBelongToArchitecture, ICanSetArchitecture, ICanGetModel, ICanSendCommand, ICanSendQuery
     {
         /// <summary>
         /// 执行命令并返回结果
