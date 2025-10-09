@@ -16,6 +16,18 @@ namespace WorldFramework
         /// <param name="model">模块</param>
         void RegisterModel<T>(T model) where T : IModel;
 
+        /// <summary>
+        /// 发送无返回值的命令
+        /// </summary>
+        /// <param name="command">命令</param>
+        void SendCommand<T>(T command) where T : ICommand;
+
+        /// <summary>
+        /// 发送带返回值的命令
+        /// </summary>
+        /// <param name="command">命令</param>
+        /// <returns>结果</returns>
+        TResult SendCommand<TResult>(ICommand<TResult> command);
 
         /// <summary>
         /// 获取模块组件

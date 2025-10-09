@@ -10,12 +10,12 @@ namespace WorldFramework
 
         public bool Initialized { get; set; }
 
-        public IArchitecture GetArchitecture( )
+        IArchitecture IBelongToArchitecture.GetArchitecture( )
         {
             return mArchitecture;
         }
 
-        public void SetArchitecture(IArchitecture architecture)
+        void ICanSetArchitecture.SetArchitecture(IArchitecture architecture)
         {
             mArchitecture = architecture;
         }

@@ -19,6 +19,7 @@ namespace WorldFramework
         /// </summary>
         protected IOCContainer mContainer = new IOCContainer( );
 
+        #region 静态数据
         /// <summary>
         /// 实例
         /// </summary>
@@ -68,6 +69,11 @@ namespace WorldFramework
                 mArchitecture.mInitialize = true;
             }
         }
+
+        #endregion
+
+        #region API
+
         public void RegisterModel<TModel>(TModel model) where TModel : IModel
         {
             model.SetArchitecture(this);
@@ -77,6 +83,16 @@ namespace WorldFramework
                 model.Init( );
                 model.Initialized = true;
             }
+        }
+
+        public void SendCommand<TCommand>(TCommand command) where TCommand : ICommand
+        {
+            ExecuteCommand(command);
+        }
+
+        public TResult SendCommand<TResult>(ICommand<TResult> command)
+        {
+            return ExecuteCommand(command);
         }
 
         public TModel GetModel<TModel>( ) where TModel : class, IModel
@@ -100,7 +116,7 @@ namespace WorldFramework
             mArchitecture = null;
         }
 
-
+        #endregion
 
         #region 子类实现方法
 
@@ -115,6 +131,28 @@ namespace WorldFramework
         /// </summary>
         /// <remarks>子类按需实现销毁逻辑</remarks>
         protected virtual void OnDeinit( ) { }
+
+        /// <summary>
+        /// 执行无返回值的命令
+        /// </summary>
+        /// <param name="command">命令</param>
+        protected virtual void ExecuteCommand(ICommand command)
+        {
+            command.SetArchitecture(this);
+            command.Execute( );
+        }
+
+        /// <summary>
+        /// 执行带有返回值的命令
+        /// </summary>
+        /// <typeparam name="TResult"></typeparam>
+        /// <param name="command">命令</param>
+        /// <returns>结果</returns>
+        protected virtual TResult ExecuteCommand<TResult>(ICommand<TResult> command)
+        {
+            command.SetArchitecture(this);
+            return command.Execute( );
+        }
 
         #endregion
     }
