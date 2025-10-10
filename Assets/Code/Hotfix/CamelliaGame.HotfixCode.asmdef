@@ -1,0 +1,16 @@
+{
+    "name": "CamelliaGame.HotfixCode",
+    "rootNamespace": "",
+    "references": [
+        "GUID:79456ab68abe5a44d9091cbddbf4e158"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
