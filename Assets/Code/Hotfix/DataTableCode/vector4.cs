@@ -11,23 +11,27 @@ using Luban;
 using SimpleJSON;
 
 
-namespace CamelliaGame
+namespace CamelliaGame.HotfixCode
 {
-public partial struct vector2
+public partial struct vector4
 {
-    public vector2(JSONNode _buf) 
+    public vector4(JSONNode _buf) 
     {
         { if(!_buf["x"].IsNumber) { throw new SerializationException(); }  X = _buf["x"]; }
         { if(!_buf["y"].IsNumber) { throw new SerializationException(); }  Y = _buf["y"]; }
+        { if(!_buf["z"].IsNumber) { throw new SerializationException(); }  Z = _buf["z"]; }
+        { if(!_buf["w"].IsNumber) { throw new SerializationException(); }  W = _buf["w"]; }
     }
 
-    public static vector2 Deserializevector2(JSONNode _buf)
+    public static vector4 Deserializevector4(JSONNode _buf)
     {
-        return new vector2(_buf);
+        return new vector4(_buf);
     }
 
     public readonly float X;
     public readonly float Y;
+    public readonly float Z;
+    public readonly float W;
    
 
     public  void ResolveRef(Tables tables)
@@ -39,6 +43,8 @@ public partial struct vector2
         return "{ "
         + "x:" + X + ","
         + "y:" + Y + ","
+        + "z:" + Z + ","
+        + "w:" + W + ","
         + "}";
     }
 }

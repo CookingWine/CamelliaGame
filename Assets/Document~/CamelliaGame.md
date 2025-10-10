@@ -1,5 +1,11 @@
 # Game Framework
+### 目录说明
 
+[目录说明](./Other/DirectoryDescription.md)
+
+
+
+---
 ## Game System
 
 ### Localization System [多语言系统]

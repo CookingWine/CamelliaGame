@@ -1,15 +1,14 @@
 set WORKSPACE=..\..
 set LUBAN_DLL=%WORKSPACE%\Tools~\Luban\Luban.dll
 set CONF_ROOT=.
-set OutputDataConfigDir=%WORKSPACE%\HtofixAssets\GameDataTable
-set OutputDataCodeDir=%WORKSPACE%\Code\DataTableCode
+
 dotnet %LUBAN_DLL% ^
     -t all ^
     -c cs-simple-json ^
     -d json ^
     --conf %CONF_ROOT%\luban.conf ^
     -x outputDataDir=%WORKSPACE%\HtofixAssets\GameDataTable ^
-    -x outputCodeDir=%WORKSPACE%\Code\DataTableCode 
+    -x outputCodeDir=%WORKSPACE%\Code\Hotfix\DataTableCode 
 
 pause
 

@@ -11,7 +11,7 @@ using Luban;
 using SimpleJSON;
 
 
-namespace CamelliaGame
+namespace CamelliaGame.HotfixCode
 {
 public partial class TbMusic
 {
@@ -27,7 +27,7 @@ public partial class TbMusic
         foreach(JSONNode _ele in _buf.Children)
         {
             Music _v;
-            { if(!_ele.IsObject) { throw new SerializationException(); }  _v = global::CamelliaGame.Music.DeserializeMusic(_ele);  }
+            { if(!_ele.IsObject) { throw new SerializationException(); }  _v = global::CamelliaGame.HotfixCode.Music.DeserializeMusic(_ele);  }
             _dataList.Add(_v);
             _dataMap.Add(_v.Id, _v);
         }

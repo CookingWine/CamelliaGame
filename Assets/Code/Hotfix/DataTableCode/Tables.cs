@@ -10,7 +10,7 @@
 using Luban;
 using SimpleJSON;
 
-namespace CamelliaGame
+namespace CamelliaGame.HotfixCode
 {
 public partial class Tables
 {
