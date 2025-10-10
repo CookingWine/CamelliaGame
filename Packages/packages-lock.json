@@ -1,5 +1,33 @@
 {
   "dependencies": {
+    "com.code-philosophy.hybridclr": {
+      "version": "https://github.com/focus-creative-games/hybridclr_unity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "01754c8fb47bd49697b3428993109e7a972a7968"
+    },
+    "com.code-philosophy.obfuz": {
+      "version": "https://github.com/focus-creative-games/obfuz.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b582c1f24bda5676c54dc66529e9b1d6f9aead47"
+    },
+    "com.code-philosophy.obfuz4hybridclr": {
+      "version": "https://github.com/focus-creative-games/obfuz4hybridclr.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "59804e17a0d1562ca0f847db986ed93b25825b6d"
+    },
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "73a63b7f672b88f7e9992f6917eb458a8cbb6fa9"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.9",
       "depth": 0,
