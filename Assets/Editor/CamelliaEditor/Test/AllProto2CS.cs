@@ -1,3 +1,4 @@
+using CamelliaGame.Runtime;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -11,7 +12,7 @@ namespace CamelliaEditor
         [MenuItem("Tools/Proto2CS")]
         public static void GenAllProto2CS( )
         {
-            string rootDir = Environment.CurrentDirectory;
+            string rootDir = Global.Path.CurrentDirectory;
             string protoDir = Path.Combine(rootDir , "Assets\\Tools~\\Protoc");
 
             string protoc;

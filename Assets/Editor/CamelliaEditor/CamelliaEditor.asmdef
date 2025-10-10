@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "GUID:f7487df7d1120d34484eb7b536112228",
+        "GUID:a78659ce61fef824a88adc95bbb9b649",
         "GUID:2373f786d14518f44b0f475db77ba4de",
         "GUID:13ba8ce62aa80c74598530029cb2d649",
         "GUID:66e09fc524ec6594b8d6ca1d91aa1a41",
@@ -16,7 +17,7 @@
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
