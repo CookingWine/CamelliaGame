@@ -99,22 +99,25 @@ Hybridclr的Unity Package Manager URL安装地址：
 
 ### [Obfuz](https://www.obfuz.com/docs/intro)
 
-Obfuz的Unity Package Manager URL安装地址：
-
-- gitee `https://gitee.com/focus-creative-games/obfuz.git`
-- github `https://github.com/focus-creative-games/obfuz.git`
-
-安装以下插件：
-
-- com.code-philosophy.hybridclr `https://github.com/focus-creative-games/hybridclr_unity.git`
-- com.code-philosophy.obfuz `https://github.com/focus-creative-games/obfuz.git`
-- com.code-philosophy.obfuz4hybridclr `https://github.com/focus-creative-games/obfuz4hybridclr.git`
-
-obufz4hybridclr是一个Obfuz扩展包，用于支持HybridCLR热更新工作流。
-
-注意
-
-Obfuz和HybridCLR插件都包含了dnlib插件。在Unity Editor中当两个package中包含同名插件时会产生错误。 解决办法为将HybridCLR下载到本地，移除其中包含的dnlib.dll，再放到Packages目录下。
+> Obfuz的Unity Package Manager URL安装地址：
+>
+> - gitee `https://gitee.com/focus-creative-games/obfuz.git`
+>
+> - github `https://github.com/focus-creative-games/obfuz.git`
+>
+> ---
+>
+> 如果需要与HybridCLR一起进行使用则需要额外安装obfuz4hybridclr
+>
+> > 用于Unity Package的URL安装地址：
+> >
+> > - `https://github.com/focus-creative-games/obfuz4hybridclr.git`
+> >
+> > - `https://gitee.com/focus-creative-games/obfuz4hybridclr.git`
+> >
+> >   ⚠注意
+> >
+> >   Obfuz和HybridCLR插件都包含了dnlib插件。在Unity Editor中当两个package中包含同名插件时会产生错误。 解决办法为将HybridCLR下载到本地，移除其中包含的dnlib.dll，再放到Packages目录下。
 
 ### [YooAsset](https://www.yooasset.com/docs/guide-editor/AssetBundleBuilder)
 
