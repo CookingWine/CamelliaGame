@@ -8,7 +8,7 @@ dotnet %LUBAN_DLL% ^
     -d json ^
     --conf %CONF_ROOT%\luban.conf ^
     -x outputDataDir=%WORKSPACE%\HtofixAssets\GameDataTable ^
-    -x outputCodeDir=%WORKSPACE%\Code\Hotfix\DataTableCode 
+    -x outputCodeDir=%WORKSPACE%\Code\Hotfix\Generated\Luban
 
 pause
 

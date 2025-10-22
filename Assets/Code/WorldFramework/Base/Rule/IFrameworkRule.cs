@@ -40,11 +40,24 @@ namespace WorldFramework
         /// <summary>
         /// 初始化创建时操作
         /// </summary>
-        void Init();
+        void Init( );
 
         /// <summary>
         /// 销毁前的清理操作
         /// </summary>
         void Deinit( );
+    }
+
+    /// <summary>
+    /// 标记该模块使用Update
+    /// </summary>
+    public interface IUpdate
+    {
+        /// <summary>
+        /// 所有游戏框架模块轮询。
+        /// </summary>
+        /// <param name="elapseSeconds">逻辑流逝时间，以秒为单位。</param>
+        /// <param name="realElapseSeconds">真实流逝时间，以秒为单位。</param>
+        void Update(float elapseSeconds , float realElapseSeconds);
     }
 }

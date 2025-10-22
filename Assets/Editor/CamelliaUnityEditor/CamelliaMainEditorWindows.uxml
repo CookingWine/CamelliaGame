@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="root">
+
+        <!-- 中部左右布局 -->
+        <ui:VisualElement class="middle-section">
+            
+            <!-- 左侧模块区：固定头 + 可滚动内容 -->
+            <ui:VisualElement class="left-panel">
+                <ui:VisualElement name="module-header" class="module-header"/>
+                <ui:ScrollView name="module-list" class="module-list"/>
+            </ui:VisualElement>
+
+            <!-- 右侧模块内容区 -->
+            <ui:ScrollView name="module-content" class="right-panel"/>
+        </ui:VisualElement>
+
+        <!-- 底部操作按钮 -->
+        <ui:VisualElement name="bottom-bar" class="bottom-bar">
+            <ui:Button name="save-button" text="保存"/>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

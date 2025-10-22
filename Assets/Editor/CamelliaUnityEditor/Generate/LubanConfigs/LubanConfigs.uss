@@ -1,0 +1,31 @@
+.root {
+    flex-direction: column;
+    padding: 12px;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.config-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.field-label {
+    width: 180px;
+    color: #ccc;
+}
+
+.path-field {
+    flex-grow: 1;
+    margin-right: 6px;
+}
+
+.select-button {
+    width: 90px;
+}

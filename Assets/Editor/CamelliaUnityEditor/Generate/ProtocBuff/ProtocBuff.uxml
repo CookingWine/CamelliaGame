@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="root">
+        <ui:Label text="ProtocBuff 模块视图" class="header"/>
+        <ui:Button text="你好来自 ProtocBuff!"/>
+    </ui:VisualElement>
+</ui:UXML>

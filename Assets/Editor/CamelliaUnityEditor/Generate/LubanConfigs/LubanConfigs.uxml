@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="root">
+        <ui:Label text="Luban 数据表生成配置" class="header"/>
+
+        <!-- 数据表路径选择 -->
+        <ui:VisualElement class="config-row">
+            <ui:Label text="数据表路径" class="field-label"/>
+            <ui:TextField name="data-table-path" class="path-field" />
+            <ui:Button name="select-file-button" text="选择文件" class="select-button"/>
+        </ui:VisualElement>
+
+         <!-- Luban.dll路径选择 -->
+        <ui:VisualElement class="config-row">
+            <ui:Label text="Luban.dll路径" class="field-label"/>
+            <ui:TextField name="LubanDllDirPath" class="path-field" />
+            <ui:Button name="LubanDllDirPath-button" text="选择文件" class="select-button"/>
+        </ui:VisualElement>
+
+         <!-- 生成数据路径选择 -->
+        <ui:VisualElement class="config-row">
+            <ui:Label text="Json数据生成路径" class="field-label"/>
+            <ui:TextField name="OutputDataDirGeneratePathFieIdText" class="path-field" />
+            <ui:Button name="OutputDataDirGeneratePathFieIdButton" text="选择文件" class="select-button"/>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
